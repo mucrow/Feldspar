@@ -10,12 +10,15 @@ namespace Feldspar {
     public string Name;
 
     /** Flavor text for the item. */
-    public string Description;
+    [TextArea] public string Description;
 
     /** Weight is in grams. */
     public float Weight = 1;
 
     /** How many of this item can stack in a single inventory slot? */
     public int MaxStack = 1;
+
+    /** Internal notes. Not shown to the player. */
+    [TextArea] public string Notes;
   }
 }
