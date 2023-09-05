@@ -21,8 +21,10 @@ namespace Feldspar.Utils {
       return value * Coefficient + Constant;
     }
 
-    public Binomial NegateConstant() {
-      return new Binomial(Coefficient, -1f * Constant);
+    /** Handy for RPG calculations like "block X% + Y damage" */
+    public float ApplyAbsorption(float value) {
+      float ret = value * (1f - Coefficient) - Constant;
+      return ret < 0f ? 0f : ret;
     }
   }
 }

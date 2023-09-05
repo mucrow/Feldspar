@@ -18,9 +18,5 @@ namespace Feldspar.Utils {
     public float Apply(float value) {
       return Mathf.Pow(value, Exponent) * Coefficient + Constant;
     }
-
-    public Trinomial NegateConstant() {
-      return new Trinomial(Exponent, Coefficient, -1f * Constant);
-    }
   }
 }
