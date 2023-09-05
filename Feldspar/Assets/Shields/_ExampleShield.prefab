@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: -3924727094046827205}
   - component: {fileID: 8871015736593320475}
   - component: {fileID: 8957833197138308837}
-  - component: {fileID: 2411276981788085386}
+  - component: {fileID: 3744974975082199909}
   - component: {fileID: 6986391003489009316}
   m_Layer: 0
-  m_Name: _ExampleSword
+  m_Name: _ExampleShield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,11 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb2304ddc20484e881538ecf3bba064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Example Sword
-  Description: This is an example sword prefab.
-  Weight: 800
+  Name: Example Shield
+  Description: This is an example shield prefab.
+  Weight: 2300
   MaxStack: 1
-  Notes: 
 --- !u!114 &8871015736593320475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Slot: 5
-  MaxDurability: 100
+  MaxDurability: 350
 --- !u!114 &8957833197138308837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,10 +78,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979b1678f24d440d95d4a93b7931dc2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ToolType: 100
-  PrimaryAction: {fileID: 2411276981788085386}
+  ToolType: 2300
+  PrimaryAction: {fileID: 3744974975082199909}
   SecondaryAction: {fileID: 6986391003489009316}
---- !u!114 &2411276981788085386
+--- !u!114 &3744974975082199909
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,11 +90,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6096910367305805472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5210f2bd4c2f4fcaa254a2f3bb598f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b2ad6ef122214ddaa46221c664d6ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CanParry: 1
-  Damage: 228
+  DamageAbsorption:
+    Coefficient: 0.75
+    Constant: 4
 --- !u!114 &6986391003489009316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,4 +110,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanParry: 0
-  Damage: 312
+  Damage: 20

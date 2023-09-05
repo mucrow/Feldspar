@@ -53,6 +53,7 @@ MonoBehaviour:
     militiamen.
   Weight: 800
   MaxStack: 1
+  Notes: 
 --- !u!114 &8871015736593320475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanParry: 1
-  Damage: 38
+  Damage: 228
 --- !u!114 &6986391003489009316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,4 +110,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanParry: 0
-  Damage: 52
+  Damage: 312
