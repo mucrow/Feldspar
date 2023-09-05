@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanParry: 1
-  Damage: 9
+  Damage: 38
 --- !u!114 &6986391003489009316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,4 +108,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanParry: 0
-  Damage: 14
+  Damage: 52
