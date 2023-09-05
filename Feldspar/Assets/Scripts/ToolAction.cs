@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 namespace Feldspar {
-  public abstract class ToolAction: MonoBehaviour {
-    //
-  }
+  /** A ToolAction describes what your weapon/shield does when you use it. */
+  public abstract class ToolAction: MonoBehaviour {}
 }
