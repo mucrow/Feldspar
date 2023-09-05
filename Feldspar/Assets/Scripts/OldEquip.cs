@@ -1,9 +1,25 @@
-﻿namespace Feldspar {
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Feldspar {
+  public class OldEquip: MonoBehaviour {
+  }
+
+  public class _MaterialIG: ScriptableObject {
+    public string Name;
+    // public Brittleness Brittleness;
+    public bool ConductsElectricity;
+    public bool ConductsHeat;
+    public bool Flammable;
+    public float Hardness;
+  }
+
   /**
    * [weapon1, weapon2] are example weapons, but they are not necessarily the only ones that can
    * do the action they annotate
    */
-  public enum ToolActionType {
+  public enum _ToolActionType {
     /** [hammer] bring the weapon down onto the enemies head */
     OverheadSwing = 1000,
 

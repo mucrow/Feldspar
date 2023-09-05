@@ -1,4 +1,6 @@
-﻿namespace Feldspar {
+﻿using UnityEngine;
+
+namespace Feldspar {
   public enum EquipSlot {
     Hat = 0,
     Mask = 1,

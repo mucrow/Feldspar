@@ -1,4 +1,8 @@
 ﻿namespace Feldspar {
+  /**
+   * ToolType isn't really used for any calculations or game conditions. Categorizing weapons just
+   * seems helpful for the player.
+   */
   public enum ToolType {
     /** includes curved swords, piercing swords, butcher's knives, and machetes */
     Sword = 100,
@@ -54,8 +58,8 @@
     Staff = 1800,
 
     /**
-     * includes crosses, magical books, talismans, totems, relics, seals, regalia, sigils, and
-     * non-wand catalysts, tablets, cards, hourglasses
+     * includes crosses, magical books, talismans, totems, relics, seals, regalia, sigils, tablets,
+     * cards, hourglasses, non-wand catalysts, and fetishes
      */
     MagicalObject = 1900,
 
