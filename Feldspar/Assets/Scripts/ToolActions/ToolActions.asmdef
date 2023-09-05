@@ -1,0 +1,16 @@
+{
+    "name": "ToolActions",
+    "rootNamespace": "",
+    "references": [
+        "GUID:22efafcbaae33144db0d7b409caa4072"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
